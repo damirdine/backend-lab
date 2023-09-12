@@ -1,0 +1,12 @@
+{% from "./card.html" import card %}
+
+{% macro cards(data) %}
+<section>
+{% for article in data %}
+    {{card(article)}} 
+{% else %}
+    <p>pas de data</p>
+{% endfor %}
+</section>
+
+{% endmacro %}
