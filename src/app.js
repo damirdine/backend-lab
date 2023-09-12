@@ -46,6 +46,7 @@ app.get("/", (req, res) => {
 app.get("/article/:id",(req, res) => {
   const articleId = req.params.id;
   const article = data.find(el => el.id==articleId)
+  if (!article) return res.render("pages/404", {message:"Record "+articleId + " not found"});
   res.render("pages/article", { data: article});
 });
 

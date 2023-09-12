@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}404 - Page not found{% endblock %}
+
+{% block content %}
+    {% if message %}
+        <p>{{message}}</p>
+    {% else %}
+        <p>Page not found</p>
+    {% endif %}
+  <a href="/">Retour page acceuil</a>
+{% endblock %}
