@@ -1,0 +1,11 @@
+{% from "./responses.html" import responses as responseList%}
+
+
+{% macro comment(props) %}
+<div>
+    <h3>{{props.user_name}}</h3>
+    <p>{{props.message}}</p>
+    {{responseList(props.responses)}}
+<div>
+{% endmacro %}
+

@@ -1,0 +1,11 @@
+{% from "./comment.html" import comment%}
+
+{% macro comments(props) %}
+<div>
+    <h3>Comments</h3>
+    {% for item in props %}
+        {{comment(item)}}
+    {% endfor %}
+<div>
+{% endmacro %}
+

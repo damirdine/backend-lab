@@ -1,0 +1,12 @@
+{% macro responses(props) %}
+
+{# <label for="">responses</label> #}
+<ul>
+    {% for item in props %}
+    <h3>{{item.user_name}}</h3>
+    <p>{{item.message}}</p>
+    {% endfor %}
+</ul>
+
+{% endmacro %}
+
