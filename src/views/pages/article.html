@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% from "components/cards/card.html" import card%}
+{% from "components/comments/index.html" import comments as CommentList%}
+
+{% block title %}Article {{data.id}}{% endblock %}
+
+{% block content %}
+<p>Article ID: {{data.id}}</p>
+{{card(data)}}
+{{CommentList(data.comments)}}
+{% endblock %}

@@ -45,7 +45,8 @@ app.get("/", (req, res) => {
 
 app.get("/article/:id",(req, res) => {
   const articleId = req.params.id;
-  res.send(`Article ID: ${articleId}`);
+  const article = data.find(el => el.id==articleId)
+  res.render("pages/article", { data: article});
 });
 
 app.get("/load-data", (req, res) => {
