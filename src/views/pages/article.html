@@ -5,6 +5,7 @@
 {% block title %}Article {{data.id}}{% endblock %}
 
 {% block content %}
+<a href="/" hx-boost="true">back</a>
 <p>Article ID: {{data.id}}</p>
 {{card(data)}}
 {{CommentList(data.comments)}}
