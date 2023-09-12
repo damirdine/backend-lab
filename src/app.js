@@ -7,7 +7,6 @@ const app = express();
 nunjucks.configure("src/views", {
   autoescape: true,
   express: app,
-  defaultExtention: ".njk",
   watch: true,
 });
 
@@ -37,8 +36,11 @@ const data = [
     ]
   }
 ];
+// set default view engine
+app.set('view engine', 'html');
+
 app.get("/", (req, res) => {
-  res.render("pages/home.njk", { title: "hello", data });
+  res.render("pages/home", { title: "hello", data });
 });
 
 app.get("/article/:id",(req, res) => {
