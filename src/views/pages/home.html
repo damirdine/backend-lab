@@ -1,5 +1,4 @@
-<!-- views/home.html -->
-{% extends "layout.njk" %}
+{% extends "layout.html" %}
 
 {% block title %}{{title}}{% endblock %}
 
@@ -7,4 +6,6 @@
   <p>This is the home page content.</p>
   <button id="load-content-button" hx-get="/load-data">Load Data</button>
   <div id="dynamic-content"></div>
+{% from "components/cards/index.html" import cards as CardList%}
+  {{CardList(data)}}
 {% endblock %}
