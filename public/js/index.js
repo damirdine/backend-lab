@@ -1,1 +1,1 @@
-console.log("log from public directory");
+console.log("⚠⚠⚠ log from public directory");

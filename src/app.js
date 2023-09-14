@@ -36,6 +36,8 @@ const data = [
     ]
   }
 ];
+app.use(express.static(__dirname +'/../public'));
+
 // set default view engine
 app.set('view engine', 'html');
 
