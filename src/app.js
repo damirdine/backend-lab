@@ -1,5 +1,8 @@
 // app.js
 const express = require("express");
+const session = require('express-session');
+const Keycloak = require('keycloak-connect');
+
 const nunjucks = require("nunjucks");
 
 const app = express();
