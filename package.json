@@ -14,6 +14,7 @@
     "@types/node": "^18.0.6",
     "chokidar": "^3.5.3",
     "express": "^4.18.2",
+    "keycloak-connect": "^22.0.3",
     "node-fetch": "^3.2.6",
     "nunjucks": "^3.2.4"
   }
