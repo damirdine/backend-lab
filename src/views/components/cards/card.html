@@ -1,7 +1,7 @@
 {% macro card(props) %}
 <div>
     <img src="" alt ="card image">
-    <a href="/article/{{props.id}}" hx-boost="true">{{props.title}}</a>
+    <a href="/article/{{props.id}}" hx-boost="false">{{props.title}}</a>
     <p>{{props.content}}</p>    
 <div>
 {% endmacro %}
