@@ -1,0 +1,15 @@
+{% macro header(user) %}
+<header>
+    <ul>
+        <li><a href="/">home</a></li>
+        {# <li><a href="/dashbord">home</a></li> #}
+    </ul>
+    <div>
+        {% if user %}
+        {{ user.name }} <a href="/logout">Logout</a> 
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
+    </div>
+</header>
+{% endmacro %}
