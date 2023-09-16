@@ -28,3 +28,11 @@ docker compose up -d
 - config your realm
 
   Please note that this approach is suitable for development and testing but is not recommended for production use due to the lack of data persistence.
+
+## Step 2 : Up Keycloak produciton like
+
+For more docker-compose examples : [keycloak-github-repo](https://github.com/keycloak/keycloak-containers/tree/main/docker-compose-examples)
+
+```shell
+docker compose -f prod_compose.yml up -d
+```
